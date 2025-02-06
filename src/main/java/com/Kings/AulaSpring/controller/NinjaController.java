@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @ResponseBody -
  */
 @RestController
-@RequestMapping("/hello-world")
-public class HelloWorldController {
+@RequestMapping
+public class NinjaController {
 
-    @GetMapping
+    @GetMapping("/vamos")
     public String helloWorld(){
         return "Heloo World!";
     }
