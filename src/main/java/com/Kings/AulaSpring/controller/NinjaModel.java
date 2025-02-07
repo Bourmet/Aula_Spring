@@ -13,6 +13,10 @@ public class NinjaModel {
     private String nome, email;
     private int idade;
 
+    @ManyToOne
+    @JoinColumn(name = "missoes_id") // Foreing Key
+    private MissoesModel missoes;
+
     public NinjaModel(int idade) {
 
     }
