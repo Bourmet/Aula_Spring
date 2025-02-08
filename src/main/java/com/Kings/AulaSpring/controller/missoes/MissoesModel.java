@@ -1,13 +1,21 @@
-package com.Kings.AulaSpring.controller;
+package com.Kings.AulaSpring.controller.missoes;
 
+import com.Kings.AulaSpring.controller.ninjas.NinjaModel;
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "tb_missoes")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class MissoesModel {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

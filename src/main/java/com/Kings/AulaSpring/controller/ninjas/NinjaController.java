@@ -1,4 +1,4 @@
-package com.Kings.AulaSpring.controller;
+package com.Kings.AulaSpring.controller.ninjas;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
